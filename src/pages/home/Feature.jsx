@@ -9,8 +9,8 @@ const Feature = () => {
   return (
     <div className="px-6 py-14 mx-auto">
       <div className="mt-8 xl:mt-12 lg:flex lg:items-center">
-        <div className="w-1/2 ml-16 -mt-20">
-          <h1 className="text-5xl font-bold leading-snug">
+        <div className="lg:w-1/2 lg:ml-16 -mt-8 gl:-mt-20">
+          <h1 className="text-2xl lg:text-5xl font-bold leading-snug">
             <span className="bg-gradient-to-r from-[#0076CE] to-[#9400D3] bg-clip-text text-transparent">
               All-in-One
             </span>{" "}
@@ -18,7 +18,7 @@ const Feature = () => {
             <br />
             that Makes Easier
           </h1>
-          <p className="mt-3">
+          <p className="mt-3 text-sm lg:text-base">
             We are more than a platform; We are your <br /> success partner.
             Discover our services to achieve <br /> your business and
             educational goals
@@ -83,34 +83,34 @@ const Feature = () => {
           </div>
         </div>
 
-        <div className="lg:w-1/2 lg:justify-center h-2/3">
+        <div className="lg:w-1/2 h-2/3 mt-12 lg:mt-0">
           <div className="flex justify-around">
-            <div className="w-96">
+            <div className="w-40 lg:w-96">
               <div>
-                <div className="h-9 px-4 py-2 bg-purple-200 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-sm justify-start items-start gap-2.5 inline-flex">
-                  <div className="VitaeViverraUtNon text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                <div className="lg:h-9 px-4 py-2 bg-purple-200 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-sm justify-start items-start gap-2.5 inline-flex">
+                  <div className="text-black text-xs lg:text-sm font-normal font-['Open Sans'] leading-snug">
                     Hey, check out loreumipsum services.{" "}
                   </div>
                 </div>
-                <div className="mt-2 h-9 px-4 py-2 bg-purple-200 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-sm justify-start items-start gap-2.5 inline-flex">
-                  <div className="VitaeViverraUtNon text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                <div className="mt-2 lg:h-9 px-4 py-2 bg-purple-200 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-sm justify-start items-start gap-2.5 inline-flex">
+                  <div className="text-black text-xs lg:text-sm font-normal font-['Open Sans'] leading-snug">
                     I learned from their videos, got my first job.
                   </div>
                 </div>
-                <div className="mt-2 h-9 px-4 py-2 bg-purple-200 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-sm justify-start items-start gap-2.5 inline-flex">
-                  <div className="VitaeViverraUtNon text-black text-sm font-normal font-['Open Sans'] leading-snug">
+                <div className="mt-2 lg:h-9 px-4 py-2 bg-purple-200 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-sm justify-start items-start gap-2.5 inline-flex">
+                  <div className="text-black text-xs lg:text-sm font-normal font-['Open Sans'] leading-snug">
                     You won{"' "}t be disappointed with their services.
                   </div>
                 </div>
               </div>
-              <div className="mt-8 ml-32">
-                <div className="w-72 h-9 px-4 py-2 bg-sky-100 rounded-tl-2xl rounded-tr-2xl rounded-bl-sm rounded-br-2xl justify-start items-start gap-2.5 inline-flex">
-                  <div className="VitaeViverraUtNon text-black text-sm font-normal font-['Poppins'] leading-snug">
+              <div className="mt-8 lg:ml-32">
+                <div className="w-72 lg:h-9 px-4 py-2 bg-sky-100 rounded-tl-2xl rounded-tr-2xl rounded-bl-sm rounded-br-2xl justify-start items-start gap-2.5 inline-flex">
+                  <div className="text-black text-sm font-normal font-['Poppins'] leading-snug">
                     I got a perfect analysis report from them too
                   </div>
                 </div>
                 <div className="mt-2 w-36 h-9 px-4 py-2 bg-sky-100 rounded-tl-2xl rounded-tr-2xl rounded-bl-sm rounded-br-2xl justify-start items-start gap-2.5 ">
-                  <div className="VitaeViverraUtNon text-black text-sm font-normal font-['Poppins'] leading-snug">
+                  <div className="text-black text-sm font-normal font-['Poppins'] leading-snug">
                     Oh, that{"'"}s great.
                   </div>
                 </div>
@@ -138,7 +138,7 @@ const Feature = () => {
               />
             </div>
           </div>
-          <div className="-mt-16">
+          <div className="lg:-mt-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="265"

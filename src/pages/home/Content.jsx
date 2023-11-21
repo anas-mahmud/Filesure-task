@@ -1,7 +1,7 @@
 const Content = () => {
   return (
     <>
-      <div className="relative lg:mt-10 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <svg
           className="absolute -left-32 bottom-28 text-white mr-8"
           xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +180,7 @@ const Content = () => {
           </div>
         </div>
       </div>
-      <p className="-mt-20 mx-40">
+      <p className="-mt-20 mx-5 lg:mx-40 text-xs lg:text-base">
         * For forms AOC-4 and MGT-7, you will be charged a penalty of ₹200{" "}
         <span className="font-bold">every day</span> until you file the form . There is no maximum
         penalty amount. So, if you <br /> don{"'"}t file the form for a year,
