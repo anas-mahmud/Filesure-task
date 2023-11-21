@@ -4,8 +4,8 @@ import picture3 from "../../assets/banner/Picture 3.png";
 
 const Banner = () => {
   return (
-    <div id="background" className="relative">
-      <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
+    <div className="background relative">
+      <div className="relative">
         <svg
           className="absolute inset-x-0 bottom-0 text-white"
           xmlns="http://www.w3.org/2000/svg"

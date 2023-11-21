@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div id="background" className="px-4 py-5 sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-20" >
+    <div className="background px-4 py-5 sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-20" >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-12">
           <img src={logo} alt="" />
