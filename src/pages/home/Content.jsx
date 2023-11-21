@@ -1,4 +1,15 @@
+import { useEffect, useState } from "react";
+import { getAllArtist } from "../../api/artistOperation";
+
 const Content = () => {
+  const [artist, setArtist] = useState([])
+  console.log(artist);
+
+  useEffect(() => {
+    getAllArtist()
+    .then((res) => setArtist(res))
+  }, []);
+
   return (
     <>
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -182,9 +193,9 @@ const Content = () => {
       </div>
       <p className="-mt-20 mx-5 lg:mx-40 text-xs lg:text-base">
         * For forms AOC-4 and MGT-7, you will be charged a penalty of ₹200{" "}
-        <span className="font-bold">every day</span> until you file the form . There is no maximum
-        penalty amount. So, if you <br /> don{"'"}t file the form for a year,
-        you will owe ₹73,000 per form
+        <span className="font-bold">every day</span> until you file the form .
+        There is no maximum penalty amount. So, if you <br /> don{"'"}t file the
+        form for a year, you will owe ₹73,000 per form
       </p>
     </>
   );
