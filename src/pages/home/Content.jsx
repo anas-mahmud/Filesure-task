@@ -29,7 +29,7 @@ const Content = () => {
           </p>
         </div>
         <div className="mt-20 grid gap-y-12 mb-8 md:grid-cols-2 lg:grid-cols-3">
-          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-sm hover:-translate-y-2 duration-300 transform">
+          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-md hover:-translate-y-2 duration-500 transform">
             <div className="flex items-center justify-center w-[40px] h-[40px] mb-4 rounded-xl bg-gradient-to-r from-[#0076CE] to-[#9400D3] -mt-7 -ml-9">
               <span className="text-white text-lg font-bold">1</span>
               <span className="text-xs text-white font-bold -mt-2">st</span>
@@ -55,7 +55,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-sm hover:-translate-y-2 duration-300 transform">
+          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-md hover:-translate-y-2 duration-500 transform">
             <div className="flex items-center justify-center w-[40px] h-[40px] mb-4 rounded-xl bg-gradient-to-r from-[#0076CE] to-[#9400D3] -mt-7 -ml-9">
               <span className="text-white text-lg font-bold">2</span>
               <span className="text-xs text-white font-bold -mt-2">nd</span>
@@ -80,7 +80,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-sm hover:-translate-y-2 duration-300 transform">
+          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-md hover:-translate-y-2 duration-500 transform">
             <div className="flex items-center justify-center w-[40px] h-[40px] mb-4 rounded-xl bg-gradient-to-r from-[#0076CE] to-[#9400D3] -mt-7 -ml-9">
               <span className="text-white text-lg font-bold">3</span>
               <span className="text-xs text-white font-bold -mt-2">rd</span>
@@ -103,7 +103,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-sm hover:-translate-y-2 duration-300 transform">
+          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-md hover:-translate-y-2 duration-500 transform">
             <div className="flex items-center justify-center w-[40px] h-[40px] mb-4 rounded-xl bg-gradient-to-r from-[#0076CE] to-[#9400D3] -mt-7 -ml-9">
               <span className="text-white text-lg font-bold">4</span>
               <span className="text-xs text-white font-bold -mt-2">th</span>
@@ -127,7 +127,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-sm hover:-translate-y-2 duration-300 transform">
+          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-md hover:-translate-y-2 duration-500 transform">
             <div className="flex items-center justify-center w-[40px] h-[40px] mb-4 rounded-xl bg-gradient-to-r from-[#0076CE] to-[#9400D3] -mt-7 -ml-9">
               <span className="text-white text-lg font-bold">5</span>
               <span className="text-xs text-white font-bold -mt-2">th</span>
@@ -153,7 +153,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-sm hover:-translate-y-2 duration-300 transform">
+          <div className="py-6 px-8 w-[350px] bg-white rounded-2xl shadow-md hover:-translate-y-2 duration-500 transform">
             <div className="flex items-center justify-center w-[40px] h-[40px] mb-4 rounded-xl bg-gradient-to-r from-[#0076CE] to-[#9400D3] -mt-7 -ml-9">
               <span className="text-white text-lg font-bold">6</span>
               <span className="text-xs text-white font-bold -mt-2">th</span>

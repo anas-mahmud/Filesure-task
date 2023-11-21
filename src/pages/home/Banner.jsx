@@ -43,16 +43,16 @@ const Banner = () => {
               </form>
             </div>
             <div className="flex gap-4">
-              <img src={picture1} alt="" className="lg:w-full w-28 mt-28" />
+              <img src={picture1} alt="" className="lg:w-full w-28 mt-28 hover:scale-105 duration-700" />
               <img
                 src={picture2}
                 alt=""
-                className="lg:w-full w-28 h-fit mt-10"
+                className="lg:w-full w-28 h-fit mt-10 hover:scale-105 duration-700"
               />
               <img
                 src={picture3}
                 alt=""
-                className="lg:w-full w-28 h-fit mt-20"
+                className="lg:w-full w-28 h-fit mt-20 hover:scale-105 duration-700"
               />
             </div>
           </div>
