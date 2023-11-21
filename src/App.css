@@ -1,5 +1,9 @@
-
-
-
-
-
+#background {
+  background: linear-gradient(
+    75deg,
+    #feddee 0%,
+    #fcf6fc 31.77%,
+    #c5eaed 64.58%,
+    #fdddfe 100%
+  );
+}
