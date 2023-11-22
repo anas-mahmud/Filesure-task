@@ -10,9 +10,9 @@ const RecommendAccountant = ({ id }) => {
   }, [id]);
 
   return (
-    <div className="ml-20 mb-10">
-      <h2 className="text-4xl font-bold my-6">Recommended for you</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-3">
+    <div className="ml-8 lg:ml-20 mb-10">
+      <h2 className="text-2xl lg:text-4xl font-bold my-6">Recommended for you</h2>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-6">
         {artists?.slice(0, 3).map((artist) => (
           <div
             key={artist.id}

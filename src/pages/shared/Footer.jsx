@@ -8,14 +8,14 @@ const Footer = () => {
   return (
     <footer className="text-white body-font">
       <div className="bg-gradient-to-r from-[#0076CE] to-[#9400D3]">
-        <div className="px-20 py-9 mx-auto flex flex-col md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap lg:flex-row">
+        <div className="lg:px-20 py-9 mx-auto flex flex-col md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap lg:flex-row">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <img src={logo} alt="" />
             <p className="mt-4 text-sm text-white">
               India{"'"}s first platform dedicated to simplifying partner search
             </p>
           </div>
-          <div className="flex-grow flex flex-col lg:flex-row md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-20 md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
                 COMPANY

@@ -1,11 +1,10 @@
-// import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const Accountants = ({ accountants }) => {
   return (
     <>
       {accountants?.map((accountant) => (
-        <div key={accountant.id} className="w-3/5 mx-auto rounded my-14 flex transition shadow-lg">
+        <div key={accountant.id} className="lg:w-3/5 border mx-auto rounded my-14 flex transition shadow-lg">
           <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
             <time
               dateTime="2022-10-10"
@@ -19,7 +18,7 @@ const Accountants = ({ accountants }) => {
 
           <div className="hidden sm:block sm:basis-56">
             <img
-              alt="Guitar"
+              alt="Accountant Image"
               src={accountant.image}
               className="aspect-square h-full w-full object-cover"
             />
@@ -55,11 +54,5 @@ const Accountants = ({ accountants }) => {
     </>
   );
 };
-
-// Accountants.propTypes = {
-//    accountants: PropTypes.arrayOf(
-//      PropTypes.shape()
-//    ),
-//  };
 
 export default Accountants;

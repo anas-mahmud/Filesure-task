@@ -15,10 +15,10 @@ const Accountant = () => {
   return (
     <div>
       <div className="my-16">
-        <div className="max-w-xl h-full p-6 py-12 ml-20 lg:px-8 lg:max-w-[1420px]">
+        <div className="max-w-xl h-full p-6 py-12 lg:ml-20 lg:px-8 lg:max-w-[1420px]">
           <div className="flex flex-col lg:flex-row gap-36">
-            <div className=" w-96 h-96 ">
-              <div className="  text-black text-3xl font-bold">
+            <div className="lg:w-96 h-96 ">
+              <div className="text-black text-3xl font-bold">
                 {artist.name}
               </div>
               <div className="w-96 text-black font-normal leading-loose mt-4">
@@ -79,7 +79,7 @@ const Accountant = () => {
               />
               <div className="w-5/6">
                 <h2 className="text-4xl font-bold my-8">About {artist.name}</h2>
-                <div className="flex justify-between">
+                <div className="flex justify-between gap-12">
                   <div>
                     <p className="text-[#999] font-semibold">FROM</p>
                     <p className="text-lg">{artist.about?.from}</p>
