@@ -74,7 +74,7 @@ const Accountant = () => {
             <div>
               <img
                 src={artist.image}
-                alt=""
+                alt="Accountant Image"
                 className="-ml-0 mt-10 w-[800px] h-[420px] lg:mt-0 mx-auto rounded-lg shadow-lg dark:bg-gray-500"
               />
               <div className="w-5/6">
