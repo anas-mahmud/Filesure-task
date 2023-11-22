@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const Accountants = ({ accountants }) => {
@@ -44,7 +44,7 @@ const Accountants = ({ accountants }) => {
             <div className="sm:flex sm:items-end sm:justify-end">
               <Link
                 to={`${accountant._id}`}
-                className="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
+                className="block bg-[#0076CE] px-5 py-3 text-center text-white text-xs font-bold uppercase"
               >
                 See More
               </Link>
@@ -56,10 +56,10 @@ const Accountants = ({ accountants }) => {
   );
 };
 
-Accountants.propTypes = {
-   accountants: PropTypes.arrayOf(
-     PropTypes.shape()
-   ),
- };
+// Accountants.propTypes = {
+//    accountants: PropTypes.arrayOf(
+//      PropTypes.shape()
+//    ),
+//  };
 
 export default Accountants;
