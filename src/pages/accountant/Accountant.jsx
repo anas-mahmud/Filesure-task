@@ -1,8 +1,17 @@
-import img from "../../assets/Rectangle 376.png";
 import { LuCalendarRange } from "react-icons/lu";
 import RecommendAccountant from "./RecommendAccountant";
+import { getArtistById } from "../../api/artistOperation";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const Accountant = () => {
+  const [artist, setArtist] = useState([]);
+  const { id } = useParams();
+
+  useEffect(() => {
+    getArtistById(id).then((res) => setArtist(res));
+  }, [id]);
+
   return (
     <div>
       <div className="my-16">
@@ -10,28 +19,30 @@ const Accountant = () => {
           <div className="flex flex-col lg:flex-row gap-36">
             <div className=" w-96 h-96 ">
               <div className="  text-black text-3xl font-bold">
-                Michael Jackson
+                {artist.name}
               </div>
-              <div className="w-96 text-black text-sm font-normal leading-loose mt-4">
-                I am here to provide my expertise in accounting and finance,
-                which includes financial statements, economics, and auditing,
-                all to assist you effectively
+              <div className="w-96 text-black font-normal leading-loose mt-4">
+                {artist.intro}
               </div>
               <div className="my-6">
-                <span className="text-sky-600 text-xl font-bold">4.8 </span>
-                <span className="text-black text-xl font-normal">(89)</span>
+                <span className="text-sky-600 text-xl font-bold">
+                  {artist.rating}
+                </span>
+                <span className="text-black text-xl font-normal">
+                  ({artist.reviewCount})
+                </span>
               </div>
               <div className="w-full max-w-sm px-5 py-5 bg-white rounded-md shadow-md">
                 <div className="flex justify-between">
                   <h1 className="text-sm font-semibold">
-                    Basic to complex tasks
+                    {artist.taskComplexity}
                   </h1>
-                  <span className="text-base font-bold">₹4,370</span>
+                  <span className="text-base font-bold">{artist.price}</span>
                 </div>
                 <div className="flex gap-2 my-4">
                   <LuCalendarRange className="text-sky-600" />
                   <p className="text-sm text-gray-600 -mt-[2px]">
-                    Delivers the job within 2 days
+                    {artist.deliveryTime}
                   </p>
                 </div>
                 <div className="flex gap-3">
@@ -48,14 +59,10 @@ const Accountant = () => {
                 </div>
               </div>
               <div className="mt-6 rounded-lg border border-gray-100 bg-white p-6">
-                <h3 className="text-3xl font-bold">What people say?</h3>
-                <p className="mt-3">
-                  I cannot express enough gratitude for the support Micheal has
-                  provided in managing my personal finances. Their attention to
-                  detail and deep understanding of financial markets has ensured
-                  that my investments are in safe hands. I highly recommend
-                  their services to anyone seeking financial guidance.
-                </p>
+                <h3 className="text-3xl font-bold">
+                  {artist.testimonial?.author}
+                </h3>
+                <p className="mt-3">{artist.testimonial?.text}</p>
                 <div className="w-20 h-2 flex gap-2 mx-auto mt-5">
                   <div className="w-8 h-2 bg-sky-600 rounded-3xl" />
                   <div className="w-2 h-2 bg-stone-300 rounded-full" />
@@ -66,63 +73,49 @@ const Accountant = () => {
             </div>
             <div>
               <img
-                src={img}
+                src={artist.image}
                 alt=""
-                className="-ml-0 mt-10 lg:mt-0 mx-auto rounded-lg shadow-lg dark:bg-gray-500"
+                className="-ml-0 mt-10 w-[800px] h-[420px] lg:mt-0 mx-auto rounded-lg shadow-lg dark:bg-gray-500"
               />
               <div className="w-5/6">
-                <h2 className="text-4xl font-bold my-8">
-                  About Michael Jackson
-                </h2>
+                <h2 className="text-4xl font-bold my-8">About {artist.name}</h2>
                 <div className="flex justify-between">
                   <div>
                     <p className="text-[#999] font-semibold">FROM</p>
-                    <p className="text-lg">INDIA</p>
+                    <p className="text-lg">{artist.about?.from}</p>
                   </div>
                   <div>
                     <p className="text-[#999] font-semibold">PARTNER SINCE</p>
-                    <p className="text-lg">2011</p>
+                    <p className="text-lg">{artist.about?.partnerSince}</p>
                   </div>
                   <div>
                     <p className="text-[#999] font-semibold">
                       AVERAGE RESPONSE TIME
                     </p>
-                    <p className="text-lg">30 minutes</p>
+                    <p className="text-lg">
+                      {artist.about?.averageResponseTime}
+                    </p>
                   </div>
                 </div>
                 <div className="my-8">
                   <p className="text-[#999] font-semibold">ABOUT</p>
-                  <p className="text-lg">
-                    I am a Professional Charted Accountant here to offer
-                    professional services of accounting and finance, financial
-                    statements, Bookkeeping in affordable price.
-                  </p>
+                  <p className="text-lg">{artist.about?.description}</p>
                 </div>
                 <div className="flex justify-between">
                   <div>
                     <p className="text-[#999] font-semibold">SERVICE I OFFER</p>
                     <ul className="list-disc px-5 mt-2">
-                      <li>Financial accounting Balance Sheets</li>
-                      <li>Bookkeeping</li>
-                      <li>Accounting and finance</li>
-                      <li>Corporate Finance</li>
-                      <li>Maintain Charts of Accounts</li>
-                      <li>Profit and loss statements</li>
-                      <li>Bank Reconciliation</li>
-                      <li>Financial statements</li>
+                      {artist.about?.services.map((service, index) => (
+                        <li key={index}>{service}</li>
+                      ))}
                     </ul>
                   </div>
                   <div>
                     <p className="text-[#999] font-semibold">WHY ME?</p>
                     <ul className="list-disc px-5 mt-2">
-                      <li>Financial accounting Balance Sheets</li>
-                      <li>Bookkeeping</li>
-                      <li>Accounting and finance</li>
-                      <li>Corporate Finance</li>
-                      <li>Maintain Charts of Accounts</li>
-                      <li>Profit and loss statements</li>
-                      <li>Bank Reconciliation</li>
-                      <li>Financial statements</li>
+                      {artist.about?.benefits.map((benefit, index) => (
+                        <li key={index}>{benefit}</li>
+                      ))}
                     </ul>
                   </div>
                 </div>

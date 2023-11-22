@@ -2,7 +2,7 @@ import picture1 from "../../assets/banner/Picture.png";
 import picture2 from "../../assets/banner/Picture 2.png";
 import picture3 from "../../assets/banner/Picture 3.png";
 
-const Banner = () => {
+const Banner = ({ handleSubmit }) => {
   return (
     <div className="background relative">
       <div className="relative">
@@ -20,18 +20,26 @@ const Banner = () => {
           <div className="flex flex-col items-center justify-between xl:flex-row">
             <div className="w-full max-w-xl lg:pr-[30px] -mt-8">
               <h2 className="mb-4 lg:text-5xl font-[750] text-black text-4xl sm:leading-none">
-                Find <span className="bg-gradient-to-r from-[#0076CE] to-[#9400D3] bg-clip-text text-transparent">Partners</span> (CAs) available online
+                Find{" "}
+                <span className="bg-gradient-to-r from-[#0076CE] to-[#9400D3] bg-clip-text text-transparent">
+                  Partners
+                </span>{" "}
+                (CAs) available online
               </h2>
               <p className="max-w-xl mb-4 text-sm lg:text-base text-black md:text-base">
                 <span className="font-semibold">CONNECT</span> with us where
                 your services are listed and visible to a myriad of businesses
                 seeking CA’s for compliance support
               </p>
-              <form className="flex items-center w-full mt-11 -ml-1">
+              <form
+                onSubmit={handleSubmit}
+                className="flex items-center w-full mt-11 -ml-1"
+              >
                 <input
                   placeholder="Search by name"
-                  required=""
                   type="text"
+                  required
+                  name="name"
                   className="flex-grow w-full h-14 px-4 mb-3  bg-white border border-[#BFBFBF] rounded-xl"
                 />
                 <button
@@ -43,7 +51,11 @@ const Banner = () => {
               </form>
             </div>
             <div className="flex gap-4">
-              <img src={picture1} alt="" className="lg:w-full w-28 mt-28 hover:scale-105 duration-700" />
+              <img
+                src={picture1}
+                alt=""
+                className="lg:w-full w-28 mt-28 hover:scale-105 duration-700"
+              />
               <img
                 src={picture2}
                 alt=""

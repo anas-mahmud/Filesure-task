@@ -10,9 +10,9 @@ export const getAllArtist = async () => {
    }
 };
 
-export const getAllArtistById = async (id) => {
+export const getArtistById = async (_id) => {
    try {
-      const response = await instance.get(`/artist/${id}`);
+      const response = await instance.get(`/artist/${_id}`);
       // console.log(response);
       return response?.data;
    } catch (error) {
