@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Banner from "./Banner";
 import Content from "./Content";
 import Feature from "./Feature";
-import { getAllArtist } from "../../api/artistOperation";
+import { getAllAccountant } from "../../api/accountantOperation";
 import Accountants from "./Accountants";
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
-    getAllArtist().then((res) => setArtists(res));
+    getAllAccountant().then((res) => setArtists(res));
   }, []);
 
   const handleSubmit = (e) => {

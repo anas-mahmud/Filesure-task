@@ -1,6 +1,6 @@
 import instance from "../../axios";
 
-export const getAllArtist = async () => {
+export const getAllAccountant = async () => {
    try {
       const response = await instance.get("/artist");
       // console.log(response);
@@ -10,7 +10,7 @@ export const getAllArtist = async () => {
    }
 };
 
-export const getArtistById = async (_id) => {
+export const getAccountantById = async (_id) => {
    try {
       const response = await instance.get(`/artist/${_id}`);
       // console.log(response);
@@ -20,7 +20,7 @@ export const getArtistById = async (_id) => {
    }
 };
 
-export const getRestArtistById = async (_id) => {
+export const getRestAccountantById = async (_id) => {
    try {
       const response = await instance.get(`/artist/rest-artist/${_id}`);
       // console.log(response);
