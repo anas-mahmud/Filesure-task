@@ -19,3 +19,13 @@ export const getArtistById = async (_id) => {
       console.log(error.message);
    }
 };
+
+export const getRestArtistById = async (_id) => {
+   try {
+      const response = await instance.get(`/artist/rest-artist/${_id}`);
+      // console.log(response);
+      return response?.data;
+   } catch (error) {
+      console.log(error.message);
+   }
+};

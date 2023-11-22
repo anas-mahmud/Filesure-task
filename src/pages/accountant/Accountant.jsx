@@ -26,7 +26,7 @@ const Accountant = () => {
               </div>
               <div className="my-6">
                 <span className="text-sky-600 text-xl font-bold">
-                  {artist.rating}
+                  {artist.rating}{" "} 
                 </span>
                 <span className="text-black text-xl font-normal">
                   ({artist.reviewCount})
@@ -124,7 +124,7 @@ const Accountant = () => {
           </div>
         </div>
       </div>
-      <RecommendAccountant />
+      <RecommendAccountant id={id} />
     </div>
   );
 };
