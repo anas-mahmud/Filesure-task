@@ -16,7 +16,9 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const accountantName = e.target.name.value;
-    const accountant = artists.filter(artist => artist.name === accountantName);
+    const accountant = artists.filter(
+      (artist) => artist.name === accountantName
+    );
     setAccountants(accountant);
     e.target.reset();
   };
@@ -24,7 +26,7 @@ const Home = () => {
   return (
     <>
       <Banner handleSubmit={handleSubmit} />
-      <Accountants accountants={accountants}/>
+      <Accountants accountants={accountants} />
       <Content />
       <Feature />
     </>
